@@ -1,54 +1,53 @@
 body {
-    background-color: #f5f5f5;
-    padding: 20px;
-}
-
-.card {
-    background-color: white;
-    width: 300px;
-    margin: 50px auto;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card_pfp {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid black;
-}
-
-#card_name {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 5px;
-}
-
-#card_position {
-    font-size: 18px;
-    color: gray;
-    margin-bottom: 15px;
-}
-
-#card_intro {
-    font-size: 16px;
-    width: 100%;
-    color: #555;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-}
-
-.social_media {
-    margin-top: 30px;
-}
-
-.social_img {
-    width: 45px;
-    height: 45px;
-    margin: 0 5px;
+    align-items: top;
+    height: 100vh;
+  }
+  
+  .card {
+    background: white;
+    width: 280px;
+    height: 300px;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    object-fit: contain;
-}
+    margin-bottom: 16px;
+  }
+  
+  h2 {
+    margin: 8px 0;
+  }
+  
+  h4 {
+    margin: 4px 0 12px;
+    color: #777;
+    font-weight: normal;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .socials {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .socials img {
+    width: 36px;
+    height: 36px;
+  }
+  
