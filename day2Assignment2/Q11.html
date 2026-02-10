@@ -1,0 +1,56 @@
+// 11 DOM Manipulation
+// Concepts: DOM selection, events
+
+// Assignments
+// Take one div with some text and change text of an element on button click.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    document.getElementById("changeBtn").addEventListener("click", function () {
+        document.getElementById("message").textContent = "Text Changed";
+    });
+    document.getElementById("addItem").addEventListener("click", function () {
+        const ul = document.getElementById("list");
+        const li = document.createElement("li");
+        li.textContent = "Item 2";
+        ul.appendChild(li);
+    });
+    document.getElementById("removeBtn").addEventListener("click", function () {
+        document.getElementById("removeMe").remove();
+    });
+    document.getElementById("inputBox").addEventListener("input", function () {
+        document.getElementById("output").textContent = this.value;
+    });
+</script>
+
+<body>
+    <div id="message">Hello World</div>
+
+    <button id="changeBtn">Change Text</button>
+
+    Add a new list item dynamically.
+    <ul id="list">
+        <li>Item 1</li>
+    </ul>
+    <button id="addItem">Add Item</button>
+
+
+    Remove an element from the DOM.
+    <p id="removeMe">Remove this text</p>
+    <button id="removeBtn">Remove</button>
+
+
+    Display input value on screen while typing.
+
+    <input type="text" id="inputBox" />
+    <p id="output"></p>
+</body>
+
+</html>
