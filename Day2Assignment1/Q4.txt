@@ -1,0 +1,14 @@
+let data;
+
+ 
+
+setTimeout(() => {
+
+  data = "Loaded";
+
+
+  console.log(data);
+
+}, 1000);
+
+ 

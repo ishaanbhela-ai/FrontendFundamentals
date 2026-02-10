@@ -1,0 +1,17 @@
+function printName() {
+
+  var name;
+
+  if (true) {
+
+    name = "Akshay";
+
+  }
+
+  console.log(name);
+
+}
+
+ 
+
+printName();

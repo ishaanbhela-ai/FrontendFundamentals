@@ -1,0 +1,15 @@
+const person = {
+
+  name: "Amar",
+
+  greet: () => {
+
+    console.log("Hello " + person.name);
+
+  },
+
+};
+
+ 
+
+person.greet();
